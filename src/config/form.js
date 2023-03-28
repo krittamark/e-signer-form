@@ -12,7 +12,7 @@ const workshopForm = {
 			Name: "File",
 			Label: "ไฟล์",
 			Type: "File",
-			Accept: "image/*, video/*",
+			Accept: "application/pdf",
 			Required: true,
 		},
 		{
