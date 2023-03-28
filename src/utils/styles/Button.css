@@ -9,10 +9,10 @@
 }
 
 .button.primary {
-	background-color: #01b2c4;
+	background-color: var(--secondary-color);
 	color: #fff;
 }
 
 .button.primary:hover {
-	background-color: var(--etda-color);
+	background-color: var(--primary-color);
 }

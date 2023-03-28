@@ -21,6 +21,6 @@
 }
 
 .footer.colored {
-	background-color: var(--etda-color);
+	background-color: var(--primary-color);
 	color: #fff;
 }

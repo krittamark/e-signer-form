@@ -1,5 +1,6 @@
 :root {
-	--etda-color: #00269a;
+	--primary-color: #00269a;
+	--secondary-color: #01b2c4;
 	--text-primary-color: #1d3359;
 	--font-family: dbheavent_cond;
 	--font-size: 28px;
@@ -18,7 +19,7 @@ html * {
 html {
 	font-family: var(--font-family);
 	color: var(--text-primary-color);
-	background-color: var(--etda-color);
+	background-color: var(--primary-color);
 	font-size: var(--font-size);
 }
 
