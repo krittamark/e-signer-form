@@ -5,6 +5,7 @@ const Button = ({ detail }) => {
                 { detail.Label }
             </label>
             { (detail.Required || false) ? <span className="form-required"></span> : null }
+            <span className="form-warning"></span>
             <input 
                 className='button'
                 type='button'
