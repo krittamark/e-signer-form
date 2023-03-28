@@ -1,3 +1,4 @@
+import FileInput from './InputType/File';
 import TextInput from './InputType/Text';
 import NumberInput from './InputType/Number';
 import '../../utils/styles/Input.css';
@@ -11,7 +12,7 @@ const Input = ({ detail }) => {
             break;
 
         case "File":
-            formInput = <TextInput detail={detail} />
+            formInput = <FileInput detail={detail} />
             break;
 
         case "DateTime":
