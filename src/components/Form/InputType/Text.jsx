@@ -5,7 +5,7 @@ const TextInput = ({ detail }) => {
                 { detail.Label }
             </label>
             { (detail.Required || false) ? <span className="form-required"></span> : null}
-            <span className="form-warning">กรุณากรอกข้อมูลให้ครบ</span>
+            <span className="form-warning"></span>
             <input 
                 className='form-input form-text'
                 type='text'
