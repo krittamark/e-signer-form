@@ -8,7 +8,7 @@ const DateTimeInput = ({ detail }) => {
             <span className="form-warning"></span>
             <input 
                 className='form-input form-number'
-                type='datetime'
+                type='datetime-local'
                 name={ detail.Name || "" }
                 id={ detail.Name || "" }
                 required={ detail.Required || false }
