@@ -13,6 +13,7 @@ const NumberInput = ({ detail }) => {
                 id={ detail.Name || "" }
                 placeholder={ detail.Placeholder || ""}
                 defaultValue={ detail.DefaultValue || "" }
+                required={ detail.Required || false }
             />
         </div>
     );
