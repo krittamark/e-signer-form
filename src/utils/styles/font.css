@@ -1,0 +1,31 @@
+@font-face {
+    font-family: dbheavent_cond;
+    src: url(./fonts/DBHeavent-Cond.eot);
+    src: url(./fonts/DBHeavent-Cond.eot?#iefix) format('embedded-opentype'),url(./fonts/DBHeavent-Cond.woff2) format('woff2'),url(./fonts/DBHeavent-Cond.woff) format('woff'),url(./fonts/DBHeavent-Cond.ttf) format('truetype'),url(./fonts/DBHeavent-Cond.svg#./fonts/DBHeavent-Cond) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: dbheavent_blackcond;
+    src: url(./fonts/DBHeavent-BlackCond.eot);
+    src: url(./fonts/DBHeavent-BlackCond.eot?#iefix) format('embedded-opentype'),url(./fonts/DBHeavent-BlackCond.woff2) format('woff2'),url(./fonts/DBHeavent-BlackCond.woff) format('woff'),url(./fonts/DBHeavent-BlackCond.ttf) format('truetype'),url(./fonts/DBHeavent-BlackCond.svg#./fonts/DBHeavent-BlackCond) format('svg');
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: dbheavent_boldcond;
+    src: url(./fonts/DBHeavent-BoldCond.eot);
+    src: url(./fonts/DBHeavent-BoldCond.eot?#iefix) format('embedded-opentype'),url(./fonts/DBHeavent-BoldCond.woff2) format('woff2'),url(./fonts/DBHeavent-BoldCond.woff) format('woff'),url(./fonts/DBHeavent-BoldCond.ttf) format('truetype'),url(./fonts/DBHeavent-BoldCond.svg#./fonts/DBHeavent-BoldCond) format('svg');
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: dbheavent_medcond;
+    src: url(./fonts/DBHeavent-MedCond.eot);
+    src: url(./fonts/DBHeavent-MedCond.eot?#iefix) format('embedded-opentype'),url(./fonts/DBHeavent-MedCond.woff2) format('woff2'),url(./fonts/DBHeavent-MedCond.woff) format('woff'),url(./fonts/DBHeavent-MedCond.ttf) format('truetype'),url(./fonts/DBHeavent-MedCond.svg#./fonts/DBHeavent-MedCond) format('svg');
+    font-weight: 500;
+    font-style: normal
+}

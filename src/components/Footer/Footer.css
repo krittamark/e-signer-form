@@ -1,0 +1,26 @@
+
+.footer {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 2em 0;
+}
+
+.footer .component {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.etda_logo_image {
+	max-height: 300px;
+	width: auto;
+	height: 50px;
+}
+
+.footer.colored {
+	background-color: var(--etda-color);
+	color: #fff;
+}
