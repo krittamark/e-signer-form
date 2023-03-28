@@ -9,7 +9,7 @@ const workshopForm = {
 	},
 	Inputs: [
 		{
-			Name: "File",
+			Name: "masterFile",
 			Label: "ไฟล์",
 			Type: "File",
 			Accept: "application/pdf",
@@ -34,7 +34,7 @@ const workshopForm = {
 			Name: "receiverId",
 			Label: "เลขบัตรประจำตัวประชาชน",
 			MaxLength: 35,
-			Type: "Number",
+			Type: "Text",
 			Placeholder: "NumberInput-receiverId",
 			Required: false,
 		},
@@ -42,7 +42,7 @@ const workshopForm = {
 			Name: "certificateContextId",
 			Label: "เลขที่หนังสือรับรอง",
 			MaxLength: 35,
-			Type: "Number",
+			Type: "Text",
 			Placeholder: "NumberInput-certificateContextId",
 			Required: true,
 		},
