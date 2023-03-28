@@ -25,6 +25,10 @@
     margin: 0;
 }
 
+.form-file {
+	
+}
+
 .form-number {
 	-moz-appearance: textfield;
 }

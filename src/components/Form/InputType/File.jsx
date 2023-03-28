@@ -7,7 +7,7 @@ const Button = ({ detail }) => {
             { (detail.Required || false) ? <span className="form-required"></span> : null }
             <span className="form-warning"></span>
             <input 
-                className='form-input formfile'
+                className='form-input form-file'
                 type='file'
                 name={ detail.Name || "" }
                 id={ detail.Name || "" }
