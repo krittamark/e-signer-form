@@ -29,6 +29,7 @@ const Form = ({ formId }) => {
 	return (
 		<section className="">
 			<div className="container">
+				<h1>{formInfo.Name || null}</h1>
 				<form action={formInfo.Action} method={formInfo.Method} encType="multipart/form-data">
 					{inputElements}
 					{actionButtonElements}
