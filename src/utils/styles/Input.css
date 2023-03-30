@@ -8,6 +8,7 @@
 	width: 100%;
 	font-family: var(--font-family);
 	font-size: 24px;
+	min-height: 1em;
 	border: 1px solid #c6c6c6;
 	background: #fff;
 	outline: none;
@@ -21,13 +22,11 @@
 
 .form-number::-webkit-outer-spin-button,
 .form-number::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
-.form-file {
-	
-}
+.form-file {}
 
 .form-number {
 	-moz-appearance: textfield;
@@ -38,8 +37,46 @@
 	content: "*";
 	color: red;
 }
+
 .form-warning {
 	margin-left: 3px;
 	font-size: 0.7em;
 	color: red;
+}
+
+
+.form-file {
+}
+.form-file::file-selector-button {
+	position: absolute;
+	right: 0;
+	border: none;
+	border-left: 1px solid #c6c6c6;
+	background: #fff;
+	font-size: 1em;
+	top: 0;
+	bottom: 0;
+	height: 1em;
+	padding: 0 0.75em;
+	border-radius: 1em;
+}
+
+.form-file::-ms-browse:hover {
+	
+}
+
+.form-file::-webkit-file-upload-button:hover {
+	
+}
+
+.form-file::file-selector-button:hover {
+	
+}
+
+.form-title {
+	font-weight: bold;
+}
+
+.form-description {
+	font-size: 0.75em;
 }
