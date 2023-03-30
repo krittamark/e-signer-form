@@ -48,6 +48,7 @@
 .form-file {
 }
 .form-file::file-selector-button {
+	display: none;
 	position: absolute;
 	right: 0;
 	border: none;
