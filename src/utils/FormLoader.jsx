@@ -14,12 +14,16 @@ const Form = ({ formId }) => {
 
 	let formInfo = forms[formId];
 
+	if (!!!formInfo) {
+		return <div>Null</div>;
+	}
+
 	const inputElements = formInfo.Inputs.map((input, index) => {
 		return <Input detail={input} key={index} />
 	});
 
 	const actionButtonElements = formInfo.ActionButtons.map((button, index) => {
-		return <Button content={button.Content} key={index} />
+		return <Button content={button.Content} type={button.Type} key={index} />
 	});
 
 	return (
