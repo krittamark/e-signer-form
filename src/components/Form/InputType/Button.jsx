@@ -1,7 +1,7 @@
-const Button = ({ detail }) => {
+const ButtonInput = ({ detail }) => {
     return (
         <div className='form-group'>
-            <label htmlFor={ detail.Name }>
+            <label htmlFor={ detail.Name } className="form-title">
                 { detail.Label }
             </label>
             { (detail.Required || false) ? <span className="form-required"></span> : null }
@@ -19,4 +19,4 @@ const Button = ({ detail }) => {
     );
 };
 
-export default Button;
+export default ButtonInput;

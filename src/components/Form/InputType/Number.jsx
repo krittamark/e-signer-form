@@ -1,7 +1,7 @@
 const NumberInput = ({ detail }) => {
     return (
         <div className='form-group'>
-            <label htmlFor={ detail.Name }>
+            <label htmlFor={ detail.Name } className="form-title">
                 { detail.Label }
             </label>
             { (detail.Required || false) ? <span className="form-required"></span> : null }
