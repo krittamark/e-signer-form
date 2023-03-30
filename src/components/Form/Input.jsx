@@ -1,9 +1,21 @@
+import DateInput from './InputType/Date';
+import TimeInput from './InputType/Time';
+import RadioInput from './InputType/Radio';
+import CheckboxInput from './InputType/Checkbox';
 import DateTimeInput from './InputType/DateTime';
 import FileInput from './InputType/File';
 import TextInput from './InputType/Text';
 import NumberInput from './InputType/Number';
+import { InputPropType } from './propTypes';
 import '../../utils/styles/Input.css';
 
+
+/**
+ * Input core component called with 'Type' props
+ * 
+ * @type {React.FC<InferProps<import("./propTypes").InputPropType>>}
+ * @returns {React.ReactElement} The input.
+ */
 const Input = ({ detail }) => {
     let formInput;
 
@@ -23,6 +35,22 @@ const Input = ({ detail }) => {
         case "Text":
             formInput = <TextInput detail={detail} />
             break;
+
+        case "Checkbox":
+            formInput = <CheckboxInput detail={detail} />
+            break;
+
+        case "Radio":
+            formInput = <RadioInput detail={detail} />
+            break;
+
+        case "Time":
+            formInput = <TimeInput detail={detail} />
+            break;
+
+        case "Date":
+            formInput = <DateInput detail={detail} />
+            break;
             
         default:
             formInput = <TextInput detail={detail} />
@@ -31,6 +59,8 @@ const Input = ({ detail }) => {
 
     return formInput;
 };
+
+Input.propType = InputPropType; 
 
 export default Input;
 
