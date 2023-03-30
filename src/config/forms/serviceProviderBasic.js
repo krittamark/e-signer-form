@@ -11,6 +11,7 @@ export const serviceProviderBasic = {
 			Description: "",
 			Required: true,
 			Accept: "application/pdf",
+			Disabled: false
 		},
 		{
 			Name: "certificateContextName",
@@ -21,14 +22,17 @@ export const serviceProviderBasic = {
 			MaxLength: 35,
 			DefaultValue: "ระบบสารสรเทศของผู้ให้บริการ จัดทำเอกสารอิเล็กทรอนิกส์",
 			Placeholder: "ชื่อของคอร์สที่รองรับ",
+			Disabled: false
 		},
 		{
 			Name: "receiverName",
 			Label: "หน่วยงานผู้รับใบรับรอง",
 			Description: "",
 			Type: "Text",
+			MaxLength: 256,
 			Placeholder: "ชื่อบุคคลผู้รับใบรับรอง",
 			Required: true,
+			Disabled: false
 		},
 		{
 			Name: "receiverId",
@@ -38,6 +42,7 @@ export const serviceProviderBasic = {
 			Type: "Text",
 			Placeholder: "เลขบัตรประจำตัวประชาชนของผู้รับใบรับรอง",
 			Required: false,
+			Disabled: false
 		},
 		{
 			Name: "certificateContextId",
@@ -47,6 +52,7 @@ export const serviceProviderBasic = {
 			Type: "Text",
 			Placeholder: "เลขที่หนังสืออ้างอิง",
 			Required: true,
+			Disabled: false
 		},
 		{
 			Name: "certificateContextFirstIssueDateTime",
@@ -54,6 +60,7 @@ export const serviceProviderBasic = {
 			Description: "",
 			Type: "Date",
 			Required: true,
+			Disabled: false
 		},
 		{
 			Name: "certificateContextIssueDateTime",
@@ -61,6 +68,7 @@ export const serviceProviderBasic = {
 			Description: "",
 			Type: "Date",
 			Required: true,
+			Disabled: false
 		},
 		{
 			Name: "certificateContextExpireDateTime",
@@ -68,6 +76,7 @@ export const serviceProviderBasic = {
 			Description: "",
 			Type: "Date",
 			Required: true,
+			Disabled: false
 		},
 		{
 			Name: "issuerAddressLineOne",
@@ -76,6 +85,7 @@ export const serviceProviderBasic = {
 			Description: "",
 			Type: "Text",
 			Required: true,
+			Disabled: false
 		},
 		{
 			Name: "issuerAddressLineTwo",
@@ -84,6 +94,7 @@ export const serviceProviderBasic = {
 			Description: "",
 			Type: "Text",
 			Required: false,
+			Disabled: false
 		},
 		{
 			Name: "issuerAddressLineThree",
@@ -92,6 +103,7 @@ export const serviceProviderBasic = {
 			Description: "",
 			Type: "Text",
 			Required: false,
+			Disabled: false
 		},
 		{
 			Name: "issuerAddressLineFour",
@@ -100,6 +112,7 @@ export const serviceProviderBasic = {
 			Description: "",
 			Type: "Text",
 			Required: false,
+			Disabled: false
 		},
 		{
 			Name: "issuerAddressLineFive",
@@ -108,6 +121,7 @@ export const serviceProviderBasic = {
 			Description: "",
 			Type: "Text",
 			Required: false,
+			Disabled: false
 		},
 		{
 			Name: "issuerAddressLineFive",
@@ -117,6 +131,7 @@ export const serviceProviderBasic = {
 			DefaultValue: "การส่งข้อมูลที่เกี่ยวข้องกันใบกำกับภาษีอิเล็กทรอนิกส์หรือใบรับอิเล็กทรอนิกส์",
 			Type: "Text",
 			Required: false,
+			Disabled: false
 		},
 		{
 			Name: "issuerAddressLineFive",
@@ -125,12 +140,20 @@ export const serviceProviderBasic = {
 			Description: "",
 			Type: "Text",
 			Required: true,
+			Disabled: false
 		},
 	],
 	ActionButtons: [
 		{
 			Type: "Primary",
+			Action: "submit",
 			Content: "บันทึกข้อมูล",
+			Disabled: false,
+		},
+		{
+			Type: "Secondary",
+			Action: "reset",
+			Content: "ยกเลิก",
 			Disabled: false,
 		},
 	],
