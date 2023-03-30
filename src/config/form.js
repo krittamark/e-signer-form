@@ -12,16 +12,16 @@ const workshopForm = {
 			Name: "masterFile",
 			Label: "ไฟล์",
 			Type: "File",
-			Accept: "application/pdf",
 			Required: true,
+			Accept: "application/pdf",
 		},
 		{
 			Name: "certificateContextName",
 			Label: "คอร์สที่รับรอง",
-			MaxLength: 35,
 			Type: "Text",
-			Placeholder: "TextInput-certificateContextName",
 			Required: true,
+			MaxLength: 35,
+			Placeholder: "TextInput-certificateContextName",
 		},
 		{
 			Name: "receiverName",
@@ -71,6 +71,74 @@ const testForm = {
 	Inputs: [
 		{
 			Name: "Test",
+			Label: "คำตอบหลายตัวเลือก",
+			Type: "Checkbox",
+			Required: true,
+			items: [
+				{
+					Label: "ตัวเลือก1",
+					Value: "option1",
+				},
+				{
+					Label: "ตัวเลือก2",
+					Value: "option2",
+				},
+			]
+		},
+		{
+			Name: "asd",
+			Label: "คำตอบหลายตัวเลือก",
+			Type: "Radio",
+			Required: true,
+			items: [
+				{
+					Label: "ตัวเลือก1",
+					Value: "option1",
+				},
+				{
+					Label: "ตัวเลือก2",
+					Value: "option2",
+				},
+			]
+		},
+		{
+			Name: "certificateContextIssueDateTime",
+			Label: "ff",
+			MaxLength: 35,
+			Type: "Date",
+			Placeholder: "DateTimeInput-certificateContextIssueDateTime",
+			Required: true,
+		},
+		{
+			Name: "aa",
+			Label: "ss",
+			MaxLength: 35,
+			Type: "Time",
+			Placeholder: "DateTimeInput-certificateContextIssueDateTime",
+			Required: true,
+		}
+	],
+	ActionButtons: [
+		{
+			Type: "Primary",
+			Content: "ทดสอบปุ่ม",
+			Disabled: false,
+		},
+		{
+			Type: "Primary",
+			Content: "ff",
+			Disabled: false,
+		},
+	],
+};
+
+const HelloForm = {
+	Name: "สวัสกี",
+	Action: "/",
+	Method: "get",
+	Inputs: [
+		{
+			Name: "Test",
 			Label: "ทดสอบการกรอกข้อมูล",
 			MaxLength: 35,
 			Type: "Text",
@@ -94,5 +162,6 @@ const testForm = {
 
 export {
 	workshopForm,
-	testForm
+	testForm,
+	HelloForm
 }
