@@ -1,5 +1,6 @@
 const workshopForm = {
 	Name: "WorkshopForm",
+	Description: "",
 	Action: "/",
 	Method: "post",
 	FileUpload: {
@@ -12,46 +13,51 @@ const workshopForm = {
 			Name: "masterFile",
 			Label: "ไฟล์",
 			Type: "File",
+			Description: "",
 			Required: true,
 			Accept: "application/pdf",
 		},
 		{
 			Name: "certificateContextName",
 			Label: "คอร์สที่รับรอง",
+			Description: "",
 			Type: "Text",
 			Required: true,
 			MaxLength: 35,
-			Placeholder: "TextInput-certificateContextName",
+			Placeholder: "ชื่อของคอร์สที่รองรับ",
 		},
 		{
 			Name: "receiverName",
 			Label: "บุคคลผู้รับใบรับรอง",
+			Description: "",
 			Type: "Text",
-			Placeholder: "TextInput-receiverName",
+			Placeholder: "ชื่อบุคคลผู้รับใบรับรอง",
 			Required: true,
 		},
 		{
 			Name: "receiverId",
 			Label: "เลขบัตรประจำตัวประชาชน",
 			MaxLength: 35,
+			Description: "",
 			Type: "Text",
-			Placeholder: "NumberInput-receiverId",
+			Placeholder: "เลขบัตรประจำตัวประชาชนของผู้รับใบรับรอง",
 			Required: false,
 		},
 		{
 			Name: "certificateContextId",
 			Label: "เลขที่หนังสือรับรอง",
 			MaxLength: 35,
+			Description: "",
 			Type: "Text",
-			Placeholder: "NumberInput-certificateContextId",
+			Placeholder: "เลขที่หนังสืออ้างอิง",
 			Required: true,
 		},
 		{
 			Name: "certificateContextIssueDateTime",
 			Label: "วันที่ออกหนังสือรับรองครั้งล่าสุด",
 			MaxLength: 35,
+			Description: "",
 			Type: "DateTime",
-			Placeholder: "DateTimeInput-certificateContextIssueDateTime",
 			Required: true,
 		}
 	],
@@ -66,6 +72,7 @@ const workshopForm = {
 
 const testForm = {
 	Name: "ฟอร์มทดสอบ",
+	Description: "",
 	Action: "/",
 	Method: "get",
 	Inputs: [
@@ -73,6 +80,7 @@ const testForm = {
 			Name: "Test",
 			Label: "คำตอบหลายตัวเลือก",
 			Type: "Checkbox",
+			Description: "",
 			Required: true,
 			items: [
 				{
@@ -89,6 +97,7 @@ const testForm = {
 			Name: "asd",
 			Label: "คำตอบหลายตัวเลือก",
 			Type: "Radio",
+			Description: "",
 			Required: true,
 			items: [
 				{
@@ -105,6 +114,7 @@ const testForm = {
 			Name: "certificateContextIssueDateTime",
 			Label: "ff",
 			MaxLength: 35,
+			Description: "",
 			Type: "Date",
 			Placeholder: "DateTimeInput-certificateContextIssueDateTime",
 			Required: true,
@@ -113,6 +123,7 @@ const testForm = {
 			Name: "aa",
 			Label: "ss",
 			MaxLength: 35,
+			Description: "",
 			Type: "Time",
 			Placeholder: "DateTimeInput-certificateContextIssueDateTime",
 			Required: true,
@@ -134,13 +145,15 @@ const testForm = {
 
 const HelloForm = {
 	Name: "สวัสกี",
+	Description: "",
 	Action: "/",
-	Method: "get",
+	Method: "post",
 	Inputs: [
 		{
 			Name: "Test",
 			Label: "ทดสอบการกรอกข้อมูล",
 			MaxLength: 35,
+			Description: "",
 			Type: "Text",
 			Placeholder: "Test",
 			Required: true,
