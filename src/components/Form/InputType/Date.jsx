@@ -12,6 +12,7 @@ const DateInput = ({ detail }) => {
                 name={ detail.Name || "" }
                 id={ detail.Name || "" }
                 required={ detail.Required || false }
+                defaultValue={ detail.DefaultValue || "" }
             />
         </div>
     );
