@@ -1,16 +1,18 @@
 import PropTypes from 'prop-types';
 
-const SupportedInputTypes = ['Text', 'Number', 'File', 'Button', 'Checkbox'];
+const SupportedInputTypes = ['Text', 'Number', 'File', 'Button', 'Checkbox', 'Radio', 'Time', 'Date', 'DateTime'];
 
 const InputPropType = {
-	Name: PropTypes.string.isRequired,
-	Label: PropTypes.string.isRequired,
-	Type: PropTypes.oneOf(SupportedInputTypes).isRequired,
-	Required: PropTypes.bool.isRequired,
-	MaxLength: PropTypes.number,
-	Placeholder: PropTypes.string,
-	Accept: PropTypes.string,
-	defaultValue: PropTypes.any
+	detail: PropTypes.shape({
+		Name: PropTypes.string.isRequired,
+		Label: PropTypes.string.isRequired,
+		Type: PropTypes.oneOf(SupportedInputTypes).isRequired,
+		Required: PropTypes.bool.isRequired,
+		MaxLength: PropTypes.number,
+		Placeholder: PropTypes.string,
+		Accept: PropTypes.string,
+		defaultValue: PropTypes.any
+	})
 }
 
 const TextInputType = {
