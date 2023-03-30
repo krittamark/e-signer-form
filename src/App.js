@@ -17,7 +17,7 @@ for (let key in forms) {
 
 const App = () => {
 
-    const [selectedForm, setSelectedForm] = useState(null);
+    const [selectedForm, setSelectedForm] = useState("workshopForm");
 
     const formListElements = formList.map((form, index) => {
         return <option value={form.form} key={index}>{form.name}</option>
@@ -30,7 +30,7 @@ const App = () => {
     return (
         <div className="App">
             <Header />
-            <select value={selectedForm} onChange={onFormChange}>
+            <select value={selectedForm || ""} onChange={onFormChange}>
                 {formListElements}
             </select>
 
