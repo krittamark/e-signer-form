@@ -3,11 +3,6 @@ export const workshopForm = {
 	Description: "",
 	Action: "/",
 	Method: "post",
-	FileUpload: {
-		Enable: false,
-		Name: "",
-		Path: "",
-	},
 	Inputs: [
 		{
 			Name: "masterFile",
@@ -31,6 +26,7 @@ export const workshopForm = {
 			Label: "บุคคลผู้รับใบรับรอง",
 			Description: "",
 			Type: "Text",
+			MaxLength: 256,
 			Placeholder: "ชื่อบุคคลผู้รับใบรับรอง",
 			Required: true,
 		},
