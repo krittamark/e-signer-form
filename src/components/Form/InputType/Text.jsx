@@ -1,3 +1,10 @@
+/**
+ * Text input commponent. Used by Input core component.
+ * 
+ * @type 
+ * @returns {React.ReactElement} The text input.
+ */
+
 const TextInput = ({ detail }) => {
     return (
         <div className='form-group'>
