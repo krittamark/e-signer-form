@@ -50,17 +50,6 @@
 }
 .form-file::file-selector-button {
 	display: none;
-	position: absolute;
-	right: 0;
-	border: none;
-	border-left: 1px solid #c6c6c6;
-	background: #fff;
-	font-size: 1em;
-	top: 0;
-	bottom: 0;
-	height: 1em;
-	padding: 0 0.75em;
-	border-radius: 1em;
 }
 
 .form-file::-ms-browse:hover {
@@ -76,7 +65,7 @@
 }
 
 .form-title {
-	font-weight: bold;
+
 }
 
 .form-description {
