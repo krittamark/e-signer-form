@@ -23,13 +23,16 @@ const Form = ({ formId }) => {
 	});
 
 	const actionButtonElements = formInfo.ActionButtons.map((button, index) => {
-		return <Button content={button.Content} type={button.Type} key={index} />
+		return <Button content={button.Content} action={button.Action} key={index} />
 	});
 
 	return (
 		<section className="">
 			<div className="container">
 				<h1>{formInfo.Name || null}</h1>
+				<div>
+					{ formInfo.Description }
+				</div>
 				<form action={formInfo.Action} method={formInfo.Method} encType="multipart/form-data">
 					{inputElements}
 					{actionButtonElements}
