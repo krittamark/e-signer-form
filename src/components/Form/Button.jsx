@@ -1,6 +1,6 @@
 import '../../utils/styles/Button.css';
 
-const Button = ({ content }) => {
+const Button = ({ content, type }) => {
     return (
         <div className='formGroup'>
             <button className='button primary'>
