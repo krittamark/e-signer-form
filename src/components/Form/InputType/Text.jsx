@@ -8,7 +8,7 @@
 const TextInput = ({ detail }) => {
     return (
         <div className='form-group'>
-            <label htmlFor={ detail.Name }>
+            <label htmlFor={ detail.Name } className="form-title">
                 { detail.Label }
             </label>
             { (detail.Required || false) ? <span className="form-required"></span> : null}
@@ -21,6 +21,8 @@ const TextInput = ({ detail }) => {
                 placeholder={ detail.Placeholder || ""}
                 defaultValue={ detail.DefaultValue || "" }
                 required={ detail.Required || false }
+                maxLength={ detail.MaxLength || 256 }
+                disabled={ detail.Disabled || false }
             />
         </div>
     );

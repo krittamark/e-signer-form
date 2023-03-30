@@ -9,6 +9,7 @@ const CheckboxInput = ({ detail }) => {
                     name={ detail.Name || "" }
                     id={ `${detail.Name}-${item.Value}` || "" }
                     value={ item.Value || ""}
+                    disabled={ detail.Disabled || false }
                 />
                 <label htmlFor={ `${detail.Name}-${item.Value}` } >
                     { item.Label }

@@ -13,6 +13,7 @@ const Button = ({ detail }) => {
                 id={ detail.Name || "" }
                 accept={ detail.Accept || "" }
                 required={ detail.Required || false }
+                disabled={ detail.Disabled || false }
             />
         </div>
     );

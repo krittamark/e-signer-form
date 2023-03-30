@@ -4,11 +4,12 @@ const RadioInput = ({ detail }) => {
         return  (
             <div key={index}>
                 <input 
-                    className='form-checkbox'
+                    className='form-radio'
                     type='radio'
                     name={ detail.Name || "" }
                     id={ `${detail.Name}-${item.Value}` || "" }
                     value={ item.Value || ""}
+                    disabled={ item.Disabled || false }
                 />
                 <label htmlFor={ `${detail.Name}-${item.Value}` } >
                     { item.Label }

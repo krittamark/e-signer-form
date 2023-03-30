@@ -14,6 +14,7 @@ const ButtonInput = ({ detail }) => {
                 placeholder={ detail.Placeholder || ""}
                 defaultValue={ detail.DefaultValue || "" }
                 required={ detail.Required || false }
+                disabled={ detail.Disabled || false }
             />
         </div>
     );
