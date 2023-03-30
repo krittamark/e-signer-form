@@ -46,6 +46,7 @@
 
 
 .form-file {
+	height: 42px;
 }
 .form-file::file-selector-button {
 	display: none;
