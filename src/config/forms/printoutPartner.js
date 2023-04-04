@@ -113,7 +113,7 @@ export const printoutPartner = {
 			Required: false,
 		},
 		{
-			Name: "jkjk",
+			Name: "certifiedBorder",
 			Label: "ขอบข่ายการรับรอง",
 			MaxLength: 140,
 			Description: "",
@@ -132,14 +132,6 @@ export const printoutPartner = {
 					Value: "option3",
 				},
 			],
-			Required: true,
-		},
-		{
-			Name: "issuerAddressLineFive",
-			Label: "URL QR code",
-			MaxLength: 140,
-			Description: "",
-			Type: "Text",
 			Required: true,
 		},
 	],

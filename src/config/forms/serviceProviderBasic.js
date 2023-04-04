@@ -128,14 +128,14 @@ export const serviceProviderBasic = {
 			Label: "ขอบเขตกระบวนการที่รับรอง",
 			MaxLength: 140,
 			Description: "",
-			DefaultValue: "การส่งข้อมูลที่เกี่ยวข้องกันใบกำกับภาษีอิเล็กทรอนิกส์หรือใบรับอิเล็กทรอนิกส์",
+			DefaultValue: "การส่งข้อมูลที่เกี่ยวข้องกับใบกำกับภาษีอิเล็กทรอนิกส์หรือใบรับอิเล็กทรอนิกส์",
 			Type: "Text",
 			Required: false,
 			Disabled: false
 		},
 		{
 			Name: "issuerAddressLineFive",
-			Label: "URL QR code",
+			Label: "ลิงก์คิวอาร์โค้ด",
 			MaxLength: 140,
 			Description: "",
 			Type: "Text",

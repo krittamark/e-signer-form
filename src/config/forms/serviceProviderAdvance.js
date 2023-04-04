@@ -19,7 +19,6 @@ export const serviceProviderAdvance = {
 			Type: "Text",
 			Required: true,
 			MaxLength: 35,
-			DefaultValue: "ระบบสารสรเทศของผู้ให้บริการ จัดทำเอกสารอิเล็กทรอนิกส์",
 			Placeholder: "ชื่อของคอร์สที่รองรับ",
 		},
 		{
@@ -52,7 +51,7 @@ export const serviceProviderAdvance = {
 			Name: "certificateContextFirstIssueDateTime",
 			Label: "วันที่ออกหนังสือรับรองครั้งแรก",
 			Description: "",
-			Type: "DateTime",
+			Type: "Date",
 			Required: true,
 		},
 		{
@@ -114,13 +113,13 @@ export const serviceProviderAdvance = {
 			Label: "ขอบเขตกระบวนการที่รับรอง",
 			MaxLength: 140,
 			Description: "",
-			DefaultValue: "การส่งข้อมูลที่เกี่ยวข้องกันใบกำกับภาษีอิเล็กทรอนิกส์หรือใบรับอิเล็กทรอนิกส์",
+			DefaultValue: "การจัดทำ นำส่ง เก็บรักษาข้อมูลที่เกี่ยวข้องกับใบกำกับภาษีอิเล็กทรอนิกส์หรือใบรับอิเล็กทรอนิกส์",
 			Type: "Text",
 			Required: false,
 		},
 		{
 			Name: "issuerAddressLineFive",
-			Label: "URL QR code",
+			Label: "ลิงก์คิวอาร์โค้ด",
 			MaxLength: 140,
 			Description: "",
 			Type: "Text",
