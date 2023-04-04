@@ -2,7 +2,7 @@ import '../../utils/styles/Button.css';
 
 const Button = ({ content, type, action }) => {
     return (
-        <div className='formGroup'>
+        <div className='form-group'>
             <button className='button primary' type={action}>
                 { content }
             </button>
