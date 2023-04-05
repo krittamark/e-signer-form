@@ -114,7 +114,7 @@ export const printoutPartner = {
 		},
 		{
 			Name: "certifiedBorder",
-			Label: "ขอบข่ายการรับรอง",
+			Label: "ขอบข่ายกระบวนการที่รับรอง",
 			MaxLength: 140,
 			Description: "",
 			Type: "Radio",
