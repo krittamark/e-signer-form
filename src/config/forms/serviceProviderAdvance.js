@@ -25,6 +25,7 @@ export const serviceProviderAdvance = {
 			Name: "receiverName",
 			Label: "หน่วยงานผู้รับใบรับรอง",
 			Description: "",
+			MaxLength: 256,
 			Type: "Text",
 			Placeholder: "ชื่อบุคคลผู้รับใบรับรอง",
 			Required: true,
@@ -78,7 +79,7 @@ export const serviceProviderAdvance = {
 		},
 		{
 			Name: "issuerAddressLineTwo",
-			Label: " ",
+			Label: "",
 			MaxLength: 140,
 			Description: "",
 			Type: "Text",
@@ -109,7 +110,7 @@ export const serviceProviderAdvance = {
 			Required: false,
 		},
 		{
-			Name: "issuerAddressLineFive",
+			Name: "contentTypeCode",
 			Label: "ขอบเขตกระบวนการที่รับรอง",
 			MaxLength: 140,
 			Description: "",
@@ -118,7 +119,7 @@ export const serviceProviderAdvance = {
 			Required: false,
 		},
 		{
-			Name: "issuerAddressLineFive",
+			Name: "urlQrCode",
 			Label: "ลิงก์คิวอาร์โค้ด",
 			MaxLength: 140,
 			Description: "",

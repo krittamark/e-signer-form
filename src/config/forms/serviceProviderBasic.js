@@ -79,7 +79,7 @@ export const serviceProviderBasic = {
 			Disabled: false
 		},
 		{
-			Name: "issuerAddressLineOne",
+			Name: "receiverAddressLineOne",
 			Label: "ที่อยู่หน่วยงานผู้รับใบรับรอง",
 			MaxLength: 140,
 			Description: "",
@@ -88,7 +88,7 @@ export const serviceProviderBasic = {
 			Disabled: false
 		},
 		{
-			Name: "issuerAddressLineTwo",
+			Name: "receiverAddressLineTwo",
 			Label: " ",
 			MaxLength: 140,
 			Description: "",
@@ -97,7 +97,7 @@ export const serviceProviderBasic = {
 			Disabled: false
 		},
 		{
-			Name: "issuerAddressLineThree",
+			Name: "receiverAddressLineThree",
 			Label: "",
 			MaxLength: 140,
 			Description: "",
@@ -106,7 +106,7 @@ export const serviceProviderBasic = {
 			Disabled: false
 		},
 		{
-			Name: "issuerAddressLineFour",
+			Name: "receiverAddressLineFour",
 			Label: "",
 			MaxLength: 140,
 			Description: "",
@@ -115,7 +115,7 @@ export const serviceProviderBasic = {
 			Disabled: false
 		},
 		{
-			Name: "issuerAddressLineFive",
+			Name: "receiverAddressLineFive",
 			Label: "",
 			MaxLength: 140,
 			Description: "",
@@ -124,7 +124,7 @@ export const serviceProviderBasic = {
 			Disabled: false
 		},
 		{
-			Name: "issuerAddressLineFive",
+			Name: "contentTypeCode",
 			Label: "ขอบเขตกระบวนการที่รับรอง",
 			MaxLength: 140,
 			Description: "",
@@ -134,7 +134,7 @@ export const serviceProviderBasic = {
 			Disabled: false
 		},
 		{
-			Name: "issuerAddressLineFive",
+			Name: "urlQrCode",
 			Label: "ลิงก์คิวอาร์โค้ด",
 			MaxLength: 140,
 			Description: "",

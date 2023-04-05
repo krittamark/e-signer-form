@@ -113,7 +113,7 @@ export const emeeting = {
 			Required: false,
 		},
 		{
-			Name: "certifiedBorder",
+			Name: "contentTypeCode",
 			Label: "ขอบข่ายการรับรอง",
 			Description: "",
 			Type: "Radio",
@@ -134,8 +134,8 @@ export const emeeting = {
 			Required: true,
 		},
 		{
-			Name: "issuerAddressLineFive",
-			Label: "URL QR code",
+			Name: "urlQrCode",
+			Label: "ลิงก์คิวอาร์โค้ด",
 			MaxLength: 140,
 			Description: "",
 			Type: "Text",
