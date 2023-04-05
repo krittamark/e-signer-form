@@ -20,7 +20,7 @@ export const serviceProviderBasic = {
 			Type: "Text",
 			Required: true,
 			MaxLength: 35,
-			DefaultValue: "ระบบสารสรเทศของผู้ให้บริการ จัดทำเอกสารอิเล็กทรอนิกส์",
+			DefaultValue: "ระบบสารสนเทศของผู้ให้บริการ จัดทำเอกสารอิเล็กทรอนิกส์",
 			Placeholder: "ชื่อของคอร์สที่รองรับ",
 			Disabled: false
 		},
