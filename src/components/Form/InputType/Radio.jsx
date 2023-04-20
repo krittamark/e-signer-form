@@ -1,6 +1,6 @@
 const RadioInput = ({ detail }) => {
 
-    const radioLists = detail.items.map((item, index) => {
+    const radioLists = detail.Items.map((item, index) => {
         return  (
             <div key={index}>
                 <input 

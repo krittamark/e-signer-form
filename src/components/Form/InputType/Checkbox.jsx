@@ -1,6 +1,6 @@
 const CheckboxInput = ({ detail }) => {
 
-    const checkboxLists = detail.items.map((item, index) => {
+    const checkboxLists = detail.Items.map((item, index) => {
         return  (
             <div key={index}>
                 <input 
