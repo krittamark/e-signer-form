@@ -6,6 +6,7 @@ import DateTimeInput from './InputType/DateTime';
 import FileInput from './InputType/File';
 import TextInput from './InputType/Text';
 import NumberInput from './InputType/Number';
+import SelectInput from './InputType/Select';
 import { InputPropType } from './propTypes';
 import '../../utils/styles/Input.css';
 
@@ -13,7 +14,6 @@ import '../../utils/styles/Input.css';
 /**
  * Input core component called with 'Type' props
  * 
- * @type {React.FC<InferProps<import("./propTypes").InputPropType>>}
  * @returns {React.ReactElement} The input.
  */
 const Input = ({ detail }) => {
@@ -50,6 +50,10 @@ const Input = ({ detail }) => {
 
         case "Date":
             formInput = <DateInput detail={detail} />
+            break;
+
+        case "Select":
+            formInput = <SelectInput detail={detail} />
             break;
             
         default:
