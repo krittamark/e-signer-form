@@ -1,10 +1,10 @@
 import '../../utils/styles/Button.css';
 
-const Button = ({ content, type, action }) => {
+const Button = ({ detail }) => {
     return (
         <div className='form-group'>
-            <button className='button primary' type={action}>
-                { content }
+            <button className={`button ${detail.Type}`} type={detail.Action || 'submit'} disabled={detail.Disabled || false}>
+                { detail.Content }
             </button>
         </div>
     );
