@@ -114,8 +114,10 @@ export const serviceProviderAdvance = {
 			Label: "ขอบเขตกระบวนการที่รับรอง",
 			MaxLength: 140,
 			Description: "",
-			DefaultValue: "การจัดทำ นำส่ง เก็บรักษาข้อมูลที่เกี่ยวข้องกับใบกำกับภาษีอิเล็กทรอนิกส์หรือใบรับอิเล็กทรอนิกส์",
-			Type: "Text",
+			Type: "Select",
+			Items: [
+
+			],
 			Required: false,
 		},
 		{
@@ -129,8 +131,15 @@ export const serviceProviderAdvance = {
 	],
 	ActionButtons: [
 		{
-			Type: "Primary",
+			Type: "primary",
+			Action: "submit",
 			Content: "บันทึกข้อมูล",
+			Disabled: false,
+		},
+		{
+			Type: "secondary",
+			Action: "reset",
+			Content: "ยกเลิก",
 			Disabled: false,
 		},
 	],

@@ -116,8 +116,8 @@ export const printoutPartner = {
 			Name: "contentTypeCode",
 			Label: "ขอบข่ายกระบวนการที่รับรอง",
 			Description: "",
-			Type: "Checkbox",
-			items: [
+			Type: "Select",
+			Items: [
 				{
 					Label: "กระบวนการตรวจสอบความถูกต้องของหนังสือรับรอง",
 					Value: "option1",
@@ -136,8 +136,15 @@ export const printoutPartner = {
 	],
 	ActionButtons: [
 		{
-			Type: "Primary",
+			Type: "primary",
+			Action: "submit",
 			Content: "บันทึกข้อมูล",
+			Disabled: false,
+		},
+		{
+			Type: "secondary",
+			Action: "reset",
+			Content: "ยกเลิก",
 			Disabled: false,
 		},
 	],

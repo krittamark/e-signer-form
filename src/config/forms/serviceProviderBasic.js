@@ -145,13 +145,13 @@ export const serviceProviderBasic = {
 	],
 	ActionButtons: [
 		{
-			Type: "Primary",
+			Type: "primary",
 			Action: "submit",
 			Content: "บันทึกข้อมูล",
 			Disabled: false,
 		},
 		{
-			Type: "Secondary",
+			Type: "secondary",
 			Action: "reset",
 			Content: "ยกเลิก",
 			Disabled: false,

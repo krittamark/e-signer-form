@@ -176,12 +176,11 @@ export const printoutPrimary = {
 			Required: false,
 		},
 		{
-			Name: "precedure",
+			Name: "contentTypeCode",
 			Label: "กระบวนการ/กิจกรรม ของ สถานที่/พื้นที่การรับรอง",
-			MaxLength: 140,
 			Description: "",
-			Type: "Checkbox",
-			items: [
+			Type: "Select",
+			Items: [
 				{
 					Label: "กระบวนการสร้างไฟล์หนังสือรับรอง",
 					Value: "certifiedFile",
@@ -203,7 +202,7 @@ export const printoutPrimary = {
 			MaxLength: 140,
 			Description: "",
 			Type: "Checkbox",
-			items: bankSelect,
+			Items: bankSelect,
 			Required: true,
 		},
 		{
@@ -212,7 +211,7 @@ export const printoutPrimary = {
 			MaxLength: 140,
 			Description: "",
 			Type: "Checkbox",
-			items: bankSelect,
+			Items: bankSelect,
 			Required: true,
 		},
 		{
@@ -221,7 +220,7 @@ export const printoutPrimary = {
 			MaxLength: 140,
 			Description: "",
 			Type: "Checkbox",
-			items: bankSelect,
+			Items: bankSelect,
 			Required: true,
 		},
 		{
@@ -230,7 +229,7 @@ export const printoutPrimary = {
 			MaxLength: 140,
 			Description: "",
 			Type: "Checkbox",
-			items: bankSelect,
+			Items: bankSelect,
 			Required: true,
 		},
 		{
@@ -239,7 +238,7 @@ export const printoutPrimary = {
 			MaxLength: 140,
 			Description: "",
 			Type: "Checkbox",
-			items: bankSelect,
+			Items: bankSelect,
 			Required: true,
 		},
 		{
@@ -248,7 +247,7 @@ export const printoutPrimary = {
 			MaxLength: 140,
 			Description: "",
 			Type: "Checkbox",
-			items: bankSelect,
+			Items: bankSelect,
 			Required: true,
 		},
 		{
@@ -257,7 +256,7 @@ export const printoutPrimary = {
 			MaxLength: 140,
 			Description: "",
 			Type: "Checkbox",
-			items: bankSelect,
+			Items: bankSelect,
 			Required: true,
 		},
 		{
@@ -266,7 +265,7 @@ export const printoutPrimary = {
 			MaxLength: 140,
 			Description: "",
 			Type: "Checkbox",
-			items: bankSelect,
+			Items: bankSelect,
 			Required: true,
 		},
 		{
@@ -275,7 +274,7 @@ export const printoutPrimary = {
 			MaxLength: 140,
 			Description: "",
 			Type: "Checkbox",
-			items: bankSelect,
+			Items: bankSelect,
 			Required: true,
 		},
 		{
@@ -284,15 +283,22 @@ export const printoutPrimary = {
 			MaxLength: 140,
 			Description: "",
 			Type: "Checkbox",
-			items: bankSelect,
+			Items: bankSelect,
 			Required: true,
 		},
 		
 	],
 	ActionButtons: [
 		{
-			Type: "Primary",
+			Type: "primary",
+			Action: "submit",
 			Content: "บันทึกข้อมูล",
+			Disabled: false,
+		},
+		{
+			Type: "secondary",
+			Action: "reset",
+			Content: "ยกเลิก",
 			Disabled: false,
 		},
 	],

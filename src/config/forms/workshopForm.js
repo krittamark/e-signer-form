@@ -59,8 +59,15 @@ export const workshopForm = {
 	],
 	ActionButtons: [
 		{
-			Type: "Primary",
+			Type: "primary",
+			Action: "submit",
 			Content: "บันทึกข้อมูล",
+			Disabled: false,
+		},
+		{
+			Type: "secondary",
+			Action: "reset",
+			Content: "ยกเลิก",
 			Disabled: false,
 		},
 	],

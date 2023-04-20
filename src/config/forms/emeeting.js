@@ -116,8 +116,8 @@ export const emeeting = {
 			Name: "contentTypeCode",
 			Label: "ขอบข่ายการรับรอง",
 			Description: "",
-			Type: "Radio",
-			items: [
+			Type: "Select",
+			Items: [
 				{
 					Label: "การรักษาความปลอดภัยด้านสารสนเทศ การประชุมผ่านสื่ออิเล็กทรอนิกส์ ในเรื่องทั่วไป",
 					Value: "option1",
@@ -144,8 +144,15 @@ export const emeeting = {
 	],
 	ActionButtons: [
 		{
-			Type: "Primary",
+			Type: "primary",
+			Action: "submit",
 			Content: "บันทึกข้อมูล",
+			Disabled: false,
+		},
+		{
+			Type: "secondary",
+			Action: "reset",
+			Content: "ยกเลิก",
 			Disabled: false,
 		},
 	],
