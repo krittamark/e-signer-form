@@ -1,6 +1,17 @@
 import PropTypes from 'prop-types';
 
-const SupportedInputTypes = ['Text', 'Number', 'File', 'Button', 'Checkbox', 'Radio', 'Time', 'Date', 'DateTime'];
+const SupportedInputTypes = [
+	'Select', 
+	'Text', 
+	'Number', 
+	'File', 
+	'Button', 
+	'Checkbox', 
+	'Radio', 
+	'Time', 
+	'Date', 
+	'DateTime'
+];
 
 const InputPropType = {
 	detail: PropTypes.shape({
